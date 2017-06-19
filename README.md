@@ -4,7 +4,9 @@ react 学习 练习小demo
 1、cart(jsx+es6)
 
 步骤：
+
 1、npm install
+
 2、直接打开cart.html文件。
 
 描述：
@@ -13,8 +15,11 @@ react 学习 练习小demo
 2、cart(react+redux+es6)
 
 步骤：
+
 1、npm install
+
 2、npm start（热加载）
+
 3、npm run build 打包
 
 描述：
