@@ -1,0 +1,8 @@
+[
+  {"id":"001","img":"./src/img/a.jpg!4-4","price":143,"name":"批发透气船袜子1","num":1,"hasCheck":true},
+  {"id":"002","img":"./src/img/a.jpg!4-4","price":32,"name":"批发透气船袜子2","num":2,"hasCheck":true},
+  {"id":"003","img":"./src/img/a.jpg!4-4","price":143,"name":"批发透气船袜子3","num":1,"hasCheck":false},
+  {"id":"004","img":"./src/img/a.jpg!4-4","price":32,"name":"批发透气船袜子4","num":2,"hasCheck":true},
+  {"id":"005","img":"./src/img/a.jpg!4-4","price":143,"name":"批发透气船袜子5","num":1,"hasCheck":false},
+  {"id":"006","img":"./src/img/a.jpg!4-4","price":32,"name":"批发透气船袜子6","num":2,"hasCheck":true}
+]

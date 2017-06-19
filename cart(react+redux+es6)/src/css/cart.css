@@ -1,0 +1,145 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+html,body{width:100%;}
+body {color: #333;background: #eee;}
+a{text-decoration: none;}
+li{list-style:none;}
+i{font-style: normal;}
+#cart{
+    width:100%;
+    max-width:640px;
+    margin: 0 auto;
+}
+#cart i{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    border-radius:14px;
+    border:2px solid orangered;
+    margin-right:10px;
+}
+i.checked{
+    background:orangered;
+}
+.CartHeader{
+    width:100%;
+    max-width:640px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 10px;
+    height:60px;
+    background:#ddd;
+}
+.CartHeader:after{
+    clear: both;
+    display: block;
+    content: '';
+}
+.CartHeader div{
+    width:50%;
+    float: left;
+    font:16px/40px "微软雅黑";
+    color:blue;
+}
+.CartHeader div:nth-child(2){
+    text-align: right;
+}
+.CartMain{
+    position:relative;
+    margin:60px 0;
+}
+.CartMain li{
+    height:100px;
+    width:100%;
+    padding:0 10px;
+    background: #fff;
+    display: table;
+    text-align: center;
+}
+.CartMain li div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.CartMain li div:nth-child(1){
+    width:10%;
+}
+.CartMain li div:nth-child(2){
+    width:30%;
+}
+.CartMain li div:nth-child(3){
+    width:60%;
+    text-align: left;
+}
+.CartMain li div:nth-child(3).edit p{
+    display: inline-block;
+}
+.CartMain li div:nth-child(3) span{
+    display: inline-block;
+    width:24px;
+    height:20px;
+    border:1px solid #333333;
+    text-align:center;
+    font:700 18px/20px "宋体";
+}
+.CartMain li div:nth-child(3) input{
+    display: inline-block;
+    width:30px;
+    height:20px;
+    border:1px solid #333333;
+    text-align: center;
+    font:16px/20px "微软雅黑";
+    margin:0 10px;
+}
+.CartMain li div:nth-child(3) a{
+    display: block;
+    width:40px;
+    background:orange;
+    text-align: center;
+    font:16px/40px "微软雅黑";
+    margin-left:20px;
+}
+.CartMain li img{
+    width:72px;
+    height:72px;
+}
+
+.CartFooter{
+    width:100%;
+    max-width:640px;
+    height:60px;
+    margin:0 auto;
+    background:#ddd;
+    position:fixed;
+    padding:10px;
+    bottom:0;
+    display: table;
+    font:16px/40px "微软雅黑";
+}
+.CartFooter div{
+    display: table-cell;
+    width:33.33333333%;
+}
+.CartFooter div:nth-child(3){
+    background:orange;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
