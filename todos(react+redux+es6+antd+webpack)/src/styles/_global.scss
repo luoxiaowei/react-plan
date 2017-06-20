@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@import "_common.scss";
+
+// reset
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+}
+ul, li {
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+
+// global
+body {
+    background: #efeff4;
+}
+body, input {
+    color: $darkGray;
+    font: normal 0.28rem Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+hr {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+
+#page {
+    max-width: 10rem;
+    margin: 0 auto;
+    position: relative;
+}
+.iconfont {
+    font-size: .32rem;
+}
+
+.am-search-cancel {
+    font-size: inherit;
+}

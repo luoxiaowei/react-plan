@@ -1,0 +1,379 @@
+@charset "utf-8";
+
+$mainGreen: #53cac4;
+$mainRed: #fe686c;
+$mainBlue: #4e9ff1;
+$mainOrange: #ffc85d;
+$lightGray: #999;
+$middleGray: #666;
+$darkGray: #333;
+$bdColor: #efeff4;
+$lineColor: #d9d9d9;
+$successGreen: #40ae36;
+$white: #fff;
+$black: #000;
+$bgCcc:#ccc;
+$iconOrange:#cca04a;
+
+// 公用颜色
+.c-gray {
+    color: $middleGray !important;
+}
+.c-lightgray {
+    color: $lightGray !important;
+}
+.c-white {
+    color: $white !important;
+}
+.c-darkgray {
+    color: $darkGray !important;
+}
+.c-red {
+    color: $mainRed !important;
+}
+.c-white{
+    color:$white !important;
+}
+.c-green {
+    color: $mainGreen !important;
+}
+.c-success {
+    color: $successGreen !important;
+}
+.c-blue{
+    color: $mainBlue !important;
+}
+.c-bg-white {
+    background-color: $white;
+}
+.c-bg-gray {
+    background-color: $lightGray;
+}
+.c-bg-red {
+    background-color: $mainRed;
+}
+.c-bg-orange {
+    background-color: $mainOrange;
+}
+.c-bg-green {
+    background-color: $mainGreen;
+}
+
+
+// 公用按钮
+%btn {
+    border: none;
+    border-radius: .06rem;
+    font-size: .3rem;
+    font-weight: 300;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+}
+.btn-green {
+    @extend %btn;
+    @extend .c-bg-green;
+    &:hover, &:active {
+        background: darken($mainGreen,5%)
+    }
+}
+.btn-red {
+    @extend %btn;
+    @extend .c-bg-red;
+    &:hover, &:active {
+        background: darken($mainRed,5%)
+    }
+}
+.btn-gray {
+    @extend %btn;
+    @extend .c-bg-gray;
+    &:hover, &:active {
+        background: darken($lightGray,5%)
+    }
+}
+.btn-xlg {
+    display: inline-block;
+    font-size: .28rem;
+    width: 100%;
+    padding: .22rem 0;
+    text-align: center;
+}
+.btn-lg {
+    display: inline-block;
+    font-size: .28rem;
+    width: 3rem;
+    padding: .22rem .2rem;
+    text-align: center;
+}
+.btn-sm {
+    max-width: 3rem;
+    padding: .18rem .2rem;
+    font-size: .26rem;
+}
+.btn-tiny {
+    display: inline-block;
+    width: 1.3rem;
+    padding: .12rem 0;
+    text-align: center;
+    font-size: .22rem;
+}
+.btn-inline {
+    display: flex;
+    > * {
+        flex: 1;
+        margin-right: .4rem;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+// 字体
+.font-min {
+    font-size: .22rem !important;
+}
+.font-24{
+    font-size: .24rem !important;
+}
+.font-small {
+    font-size: .26rem !important;
+}
+.font-middle {
+    font-size: .28rem !important;
+}
+.font-30 {
+    font-size: .30rem;
+}
+.font-large {
+    font-size: .32rem !important;
+}
+.font-large2 {
+    font-size: .36rem;
+}
+.font-amount {
+    font-size: .7rem;
+}
+.font-light {
+    font-weight: 300;
+}
+.font-normal {
+    font-weight: normal;
+}
+.t-center {
+    text-align: center;
+}
+.t-right{
+    text-align: right !important;
+}
+.t-left{
+    text-align: left !important;
+}
+.v-center {
+    vertical-align: middle;
+    &:after {
+        content: "";
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.height-single {
+    padding: .15rem;
+}
+
+// 距离
+.l-mtb {
+    margin: .2rem 0;
+}
+.l-mt {
+    margin-top: .2rem;
+}
+.l-mr-10{
+    margin-right: 0.1rem;
+}
+.l-mr-20{
+    margin-right: 0.2rem;
+}
+.l-mb {
+    margin-bottom: .2rem;
+}
+.l-mtb-large {
+    margin: .4rem 0;
+}
+.l-mt-large {
+    margin-top: .4rem;
+}
+.l-mb-large {
+    margin-bottom: .4rem;
+}
+.l-mlr-small {
+    margin: 0 .1rem;
+}
+.l-mtb-small {
+    margin: .1rem 0;
+}
+.l-mt-small {
+    margin-top: .1rem;
+}
+.l-mb-small {
+    margin-bottom: .1rem;
+}
+.l-mt-none {
+    margin-top: 0 !important;
+}
+.l-mb-none {
+    margin-bottom: 0 !important;
+}
+.l-ml-none {
+    margin-left: 0 !important;
+}
+.l-mr-none {
+    margin-right: 0 !important;
+}
+.l-p-20 {
+    padding:.2rem;
+}
+.l-pt-20 {
+    padding-top:.2rem;
+}
+.l-pt-35 {
+    padding-top:.35rem;
+}
+.l-pb-20{ 
+    padding-bottom:.2rem;
+}
+.l-p-small {
+    padding: .1rem;
+}
+.l-pt-small {
+    padding-top: .1rem;
+}
+.l-pb-small{ 
+    padding-bottom: .1rem;
+}
+.l-p-tb{
+    padding: .15rem .25rem;
+}
+.l-p-20{
+    padding: .2rem;
+}
+
+// 布局
+.inline-block{
+    display: inline-block;
+}
+.block{
+    display: block;
+}
+.over-float{
+    overflow: hidden;
+}
+.f-fl {
+    float: left;
+}
+.f-fr {
+    float: right;
+}
+.f-clearfix {
+    &:before, &:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+        font-size: 0;
+        visibility: hidden;
+    }
+}
+.no-wrap {
+    white-space: nowrap;
+}
+.block-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// 装饰
+.bd-t {
+    border-top: 1px solid $bdColor;
+}
+.bd-b {
+    border-bottom: 1px solid $bdColor;
+}
+hr.line {
+    border: none;
+    border-top: 1px solid $lineColor;
+}
+.link {
+    color: $mainBlue;
+}
+
+// 弹窗
+.popup {
+    padding: 0 .5rem;
+    max-height: 8rem;
+    overflow-y: auto;
+    .header {
+        height: 1.3rem;
+        line-height: 1.3rem;
+        font-size: .3rem;
+        position: relative;
+        border-bottom: 1px solid $bdColor;
+        .iconfont {
+            position: absolute;
+            right: -.2rem;
+        }
+    }
+}
+
+// 底部
+.main-wrap {
+    margin-bottom: 1.2rem;
+}
+.search-top{
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.main-footer {
+    border-top: 1px solid $lineColor;
+    padding: .1rem .2rem;
+    background: #fff;
+    display: flex;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    a {
+        color: $darkGray;
+    }
+    li {
+        flex: 1;
+        text-align: center;
+        font-size: .22rem;
+        color: $middleGray;
+        .iconfont {
+            display: block;
+            font-size: .45rem;
+        }
+        &.active, &.active a {
+            color: $mainGreen;
+        }
+    }
+}
+//弹窗超出不影藏
+.am-modal-content{
+    overflow: visible !important;
+}
+//遮罩层高于
+.am-modal-mask{
+    z-index: 1001
+}
+.am-modal-wrap {
+    z-index: 1002
+}
+a{
+    text-decoration:none;
+    color:#333;
+}

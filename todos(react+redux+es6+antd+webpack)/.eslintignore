@@ -1,0 +1,5 @@
+# SublimeLinter 暂时对此文件配置不生效
+# /node_modules/* 默认忽略
+
+**/*.min.js
+src/index.tpl.js
