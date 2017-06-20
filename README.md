@@ -1,7 +1,7 @@
 # react-plan
 react 学习 练习小demo
 
-1、cart(jsx+es6)
+一、cart(jsx+es6)
 
 步骤：
 
@@ -12,7 +12,8 @@ react 学习 练习小demo
 描述：
 模拟数据，没有数据交互，根据状态值来进行操作，不进行dom操作
 
-2、cart(react+redux+es6)
+
+二、cart(react+redux+es6)
 
 步骤：
 
@@ -25,7 +26,8 @@ react 学习 练习小demo
 描述：
 模拟数据交互，用到redux来管理状态值。根据状态值来进行操作，不进行dom操作
 
-3、todos(react+redux+es6+antd+webpack)
+
+三、todos(react+redux+es6+antd+webpack)
 
 步骤：
 
